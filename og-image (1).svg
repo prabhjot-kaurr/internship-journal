@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+    </style>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1409"/>
+      <stop offset="100%" style="stop-color:#2E1F0A"/>
+    </linearGradient>
+    <!-- Gold accent gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C49A3C"/>
+      <stop offset="100%" style="stop-color:#E8C96A"/>
+    </linearGradient>
+    <!-- Subtle texture overlay -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle noise texture -->
+  <rect width="1200" height="630" fill="#C49A3C" opacity="0.03" filter="url(#noise)"/>
+
+  <!-- Left gold vertical bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#gold)"/>
+
+  <!-- Top decorative line -->
+  <rect x="72" y="72" width="400" height="1" fill="#C49A3C" opacity="0.4"/>
+
+  <!-- Bottom decorative line -->
+  <rect x="72" y="558" width="1056" height="1" fill="#C49A3C" opacity="0.3"/>
+
+  <!-- Diamond ornament top -->
+  <rect x="480" y="67" width="10" height="10" fill="#C49A3C" opacity="0.8" transform="rotate(45 485 72)"/>
+
+  <!-- KICKER -->
+  <text x="72" y="118" font-family="'DM Sans', sans-serif" font-size="13" font-weight="500" fill="#C49A3C" letter-spacing="4" opacity="0.9">INTERNSHIP JOURNAL  ·  HINDUSTANI TONGUE  ·  2026</text>
+
+  <!-- MAIN HEADLINE LINE 1 -->
+  <text x="72" y="248" font-family="'Playfair Display', Georgia, serif" font-size="108" font-weight="900" fill="#F6F1E9" letter-spacing="-3">Every day.</text>
+
+  <!-- MAIN HEADLINE LINE 2 - italic rust -->
+  <text x="72" y="370" font-family="'Playfair Display', Georgia, serif" font-size="108" font-weight="900" font-style="italic" fill="#9E4A20" letter-spacing="-3">Documented.</text>
+
+  <!-- SUBHEADLINE -->
+  <text x="72" y="438" font-family="'DM Sans', sans-serif" font-size="18" font-weight="400" fill="#F6F1E9" opacity="0.5" letter-spacing="0.5">A Social Media Marketing Intern learning out loud — 3 months, 12 weeks, 72 days.</text>
+
+  <!-- Divider rule -->
+  <rect x="72" y="468" width="80" height="2" fill="#C49A3C"/>
+
+  <!-- BOTTOM META LEFT -->
+  <text x="72" y="510" font-family="'DM Sans', sans-serif" font-size="15" font-weight="500" fill="#F6F1E9" opacity="0.35" letter-spacing="1">PRABHJOT KAUR</text>
+
+  <!-- BOTTOM META RIGHT - pill badge -->
+  <rect x="952" y="490" width="176" height="34" rx="17" fill="#C49A3C" opacity="0.15"/>
+  <rect x="952" y="490" width="176" height="34" rx="17" fill="none" stroke="#C49A3C" stroke-width="1" opacity="0.5"/>
+  <text x="1040" y="512" font-family="'DM Sans', sans-serif" font-size="12" font-weight="600" fill="#E8C96A" letter-spacing="2" text-anchor="middle">WEEK 2 LIVE</text>
+
+  <!-- Corner decoration - bottom right -->
+  <text x="1110" y="580" font-family="'Playfair Display', serif" font-size="13" fill="#C49A3C" opacity="0.3" letter-spacing="2">✦</text>
+  <text x="1128" y="580" font-family="'Playfair Display', serif" font-size="13" fill="#C49A3C" opacity="0.2" letter-spacing="2">✦</text>
+</svg>
