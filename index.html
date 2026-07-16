@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Out Loud — Prabhjot Kaur · Hindustani Tongue Internship</title>
+<meta property="og:title" content="Learning Out Loud — Prabhjot Kaur's Internship Journal"/>
+<meta property="og:description" content="A Social Media Marketing Intern documenting every working day at Hindustani Tongue. 3 months, 12 weeks, every learning and every mistake — shared publicly."/>
+<meta property="og:image" content="https://raw.githubusercontent.com/prabhjot-kaurr/internship-journal/main/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://prabhjot-kaurr.github.io/internship-journal"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Learning Out Loud — Prabhjot Kaur"/>
+<meta name="twitter:description" content="Social Media Marketing Intern at Hindustani Tongue. Documenting every day, publicly."/>
+<meta name="twitter:image" content="https://raw.githubusercontent.com/prabhjot-kaurr/internship-journal/main/og-image.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F6F1E9;--cream-dark:#EDE5D4;--cream-deeper:#E3D9C6;--ink:#1C1409;--ink-soft:#3E2F1C;--gold:#C49A3C;--gold-light:#E8C96A;--rust:#9E4A20;--muted:#7A6A56;--border:rgba(28,20,9,0.13);--border-strong:rgba(28,20,9,0.3);}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--ink);font-family:'EB Garamond',Georgia,serif;font-size:18px;line-height:1.75;overflow-x:hidden;cursor:default;}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:.5;}
+.view{display:none;}.view.active{display:block;}
+.site-nav{position:sticky;top:0;z-index:100;background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:52px;border-bottom:1px solid rgba(255,255,255,0.06);}
+.nav-brand{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--cream);letter-spacing:0.02em;cursor:pointer;}
+.nav-brand span{color:var(--gold-light);}
+.nav-links{display:flex;gap:0;}
+.nav-link{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(246,241,233,0.55);padding:0 1.1rem;height:52px;display:flex;align-items:center;cursor:pointer;border:none;background:none;transition:color 0.2s,background 0.2s;border-bottom:2px solid transparent;}
+.nav-link:hover{color:var(--cream);}.nav-link.active{color:var(--gold-light);border-bottom-color:var(--gold);}
+.nav-week-badge{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;background:var(--gold);color:var(--ink);padding:3px 10px;border-radius:999px;letter-spacing:0.1em;}
+.masthead{border-bottom:2px solid var(--ink);padding:1.25rem 2.5rem 1rem;display:flex;align-items:center;justify-content:space-between;position:relative;}
+.masthead::after{content:'';position:absolute;bottom:4px;left:2.5rem;right:2.5rem;height:.5px;background:var(--ink);}
+.masthead-side{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
+.masthead-center{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,30px);font-weight:900;letter-spacing:-0.02em;text-align:center;flex:1;}
+.hero{max-width:860px;margin:0 auto;padding:5rem 2rem 4rem;text-align:center;}
+.hero-kicker{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.75rem;opacity:0;animation:fadeUp .7s ease forwards .15s;}
+.hero-hl{font-family:'Playfair Display',serif;font-size:clamp(52px,10vw,110px);font-weight:900;line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease forwards .3s;}
+.hero-hl em{font-style:italic;color:var(--rust);}
+.hero-sub{font-family:'EB Garamond',serif;font-style:italic;font-size:clamp(17px,2.2vw,22px);color:var(--ink-soft);max-width:560px;margin:0 auto 2.5rem;line-height:1.65;opacity:0;animation:fadeUp .8s ease forwards .48s;}
+.hero-rule{display:flex;align-items:center;gap:1rem;max-width:340px;margin:0 auto 2.75rem;opacity:0;animation:fadeUp .7s ease forwards .6s;}
+.hero-rule::before,.hero-rule::after{content:'';flex:1;height:1px;background:var(--border-strong);}
+.diamond{width:7px;height:7px;background:var(--gold);transform:rotate(45deg);flex-shrink:0;}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp .7s ease forwards .72s;}
+.btn-primary{background:var(--ink);color:var(--cream);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.9rem 2.2rem;border:2px solid var(--ink);cursor:pointer;transition:all .25s;position:relative;overflow:hidden;}
+.btn-primary::before{content:'';position:absolute;inset:0;background:var(--gold);transform:translateX(-100%);transition:transform .28s ease;z-index:0;}
+.btn-primary:hover::before{transform:translateX(0);}.btn-primary:hover{color:var(--ink);border-color:var(--gold);}.btn-primary span{position:relative;z-index:1;}
+.btn-secondary{background:transparent;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:.9rem 2.2rem;border:2px solid var(--border-strong);cursor:pointer;transition:all .25s;}
+.btn-secondary:hover{border-color:var(--ink);background:var(--cream-dark);}
+.stats-band{background:var(--ink);color:var(--cream);padding:2.75rem 2rem;}
+.stats-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
+@media(max-width:600px){.stats-inner{grid-template-columns:repeat(2,1fr);}}
+.stat-n{font-family:'Playfair Display',serif;font-size:clamp(40px,6vw,64px);font-weight:900;color:var(--gold-light);line-height:1;display:block;}
+.stat-l{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,241,233,.45);margin-top:5px;display:block;}
+.about-strip{max-width:720px;margin:5rem auto;padding:0 2rem;}
+.sec-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;display:flex;align-items:center;gap:1rem;}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border);}
+.drop-p{font-size:19px;line-height:1.85;color:var(--ink-soft);margin-bottom:1.4rem;}
+.drop-p::first-letter{font-family:'Playfair Display',serif;font-size:5em;font-weight:900;float:left;line-height:.76;padding-right:.1em;color:var(--ink);margin-top:.08em;}
+.pullquote{border-left:3px solid var(--gold);margin:3rem 0;padding:.5rem 0 .5rem 2rem;}
+.pullquote p{font-family:'Playfair Display',serif;font-size:clamp(20px,2.8vw,27px);font-style:italic;line-height:1.4;}
+.pullquote cite{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.6rem;display:block;}
+.tracks-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2.5rem 0;}
+@media(max-width:540px){.tracks-grid{grid-template-columns:1fr;}}
+.track-card{border:1px solid var(--border);padding:1.5rem 1.4rem;background:var(--cream);position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;}
+.track-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(28,20,9,.1);}
+.track-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold);}
+.track-icon{font-size:22px;display:block;margin-bottom:.6rem;}
+.track-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;margin-bottom:.3rem;}
+.track-desc{font-family:'DM Sans',sans-serif;font-size:12.5px;color:var(--muted);line-height:1.55;}
+.week-progress-home{background:var(--cream-dark);border:1px solid var(--border);padding:3rem 2.5rem;margin:4rem 0;}
+.wph-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;text-align:center;margin-bottom:.2rem;}
+.wph-sub{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:2.5rem;}
+.weeks-home{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;max-width:700px;margin:0 auto;}
+@media(max-width:580px){.weeks-home{grid-template-columns:repeat(3,1fr);}}
+.wh-chip{border:1px solid var(--border);padding:.65rem .3rem;text-align:center;background:var(--cream);cursor:pointer;transition:all .2s;}
+.wh-chip:hover{background:var(--cream-deeper);}.wh-chip.done{background:var(--ink);color:var(--cream);border-color:var(--ink);}.wh-chip.current{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+.wh-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;display:block;line-height:1;}
+.wh-lbl{font-family:'DM Sans',sans-serif;font-size:8px;letter-spacing:.08em;text-transform:uppercase;opacity:.55;margin-top:3px;display:block;}
+.wh-chip.done .wh-lbl,.wh-chip.current .wh-lbl{opacity:.75;}
+.ornament{text-align:center;margin:3rem 0;color:var(--gold);font-size:18px;letter-spacing:.5em;opacity:.5;}
+.home-footer{background:var(--ink);color:var(--cream);text-align:center;padding:3.5rem 2rem;}
+.hf-logo{font-family:'Playfair Display',serif;font-size:26px;font-weight:900;margin-bottom:.3rem;}
+.hf-tag{font-family:'EB Garamond',serif;font-style:italic;font-size:16px;color:rgba(246,241,233,.45);margin-bottom:2rem;display:block;}
+.hf-meta{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(246,241,233,.25);margin-top:2rem;}
+.journal-wrap{max-width:1100px;margin:0 auto;padding:3rem 2rem;}
+.journal-header{margin-bottom:3rem;}
+.journal-header h2{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,52px);font-weight:900;letter-spacing:-.02em;margin-bottom:.5rem;}
+.journal-header p{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--muted);letter-spacing:.05em;}
+.month-section{margin-bottom:4rem;}
+.month-title{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,30px);font-weight:700;padding-bottom:.75rem;margin-bottom:2rem;border-bottom:2px solid var(--ink);display:flex;align-items:baseline;gap:1rem;}
+.month-title small{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.week-card{border:1px solid var(--border);margin-bottom:1.5rem;overflow:hidden;transition:box-shadow .2s;}
+.week-card:hover{box-shadow:0 4px 20px rgba(28,20,9,.08);}
+.week-head{background:var(--cream-dark);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;border-bottom:1px solid var(--border);}
+.week-head-left{display:flex;align-items:center;gap:1rem;}
+.week-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--gold);line-height:1;flex-shrink:0;}
+.week-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;}
+.week-dates{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);letter-spacing:.08em;margin-top:2px;}
+.week-status-badge{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:4px 12px;border-radius:999px;flex-shrink:0;}
+.badge-done{background:var(--ink);color:var(--cream);}.badge-active{background:var(--gold);color:var(--ink);}.badge-upcoming{background:transparent;color:var(--muted);border:1px solid var(--border);}
+.week-chevron{font-size:18px;color:var(--muted);transition:transform .25s;flex-shrink:0;margin-left:.5rem;}
+.week-card.open .week-chevron{transform:rotate(180deg);}
+.week-body{display:none;}.week-card.open .week-body{display:block;}
+.day-tabs{display:flex;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
+.day-tabs::-webkit-scrollbar{display:none;}
+.day-tab{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:.9rem 1.3rem;border:none;background:none;cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;margin-bottom:-1px;transition:color .2s,border-color .2s;flex-shrink:0;}
+.day-tab:hover{color:var(--ink);}.day-tab.active{color:var(--ink);border-bottom-color:var(--rust);font-weight:600;}
+.day-tab.filled::after{content:'·';color:var(--gold);margin-left:4px;}
+.day-panels{}.day-panel{display:none;padding:2rem 1.75rem;}.day-panel.active{display:block;}
+.day-panel-date{font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:2rem;padding-bottom:.75rem;border-bottom:1px solid var(--border);}
+.entry-section{margin-bottom:2rem;}.entry-section:last-child{margin-bottom:0;}
+.entry-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem;}
+.entry-content{font-family:'EB Garamond',serif;font-size:17px;line-height:1.8;color:var(--ink-soft);}
+.entry-content ul{padding-left:1.3rem;}.entry-content li{margin-bottom:.3rem;}
+.week-reflection{background:var(--cream-dark);padding:1.5rem 1.75rem;border-top:1px solid var(--border);}
+.wr-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem;}
+.wr-win{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;}
+.signature-week{border:2px solid var(--gold);}
+.signature-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:'DM Sans',sans-serif;font-size:9px;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  background:var(--rust);color:var(--cream);
+  padding:4px 11px;border-radius:999px;margin-bottom:1rem;
+}
+.signature-tag::before{content:'★';font-size:10px;}
+.framework-table{
+  width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem;
+  font-family:'DM Sans',sans-serif;font-size:12px;
+}
+.framework-table th{
+  background:var(--ink);color:var(--gold-light);
+  text-align:left;padding:8px 10px;
+  letter-spacing:.06em;text-transform:uppercase;font-size:10px;font-weight:600;
+}
+.framework-table td{
+  padding:8px 10px;border-bottom:1px solid var(--border);
+  color:var(--ink-soft);font-family:'EB Garamond',serif;font-size:15px;
+}
+.framework-table tr:nth-child(even){background:rgba(196,154,60,0.06);}
+.weekly-body{padding:2rem 1.75rem;}
+.weekly-intro{font-family:'EB Garamond',serif;font-style:italic;font-size:19px;color:var(--ink-soft);line-height:1.75;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);}
+.weekly-section{margin-bottom:2rem;}
+.weekly-section:last-child{margin-bottom:0;}
+.weekly-label{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem;}
+.weekly-content{font-family:'EB Garamond',serif;font-size:17px;line-height:1.8;color:var(--ink-soft);}
+.weekly-content ul{padding-left:1.3rem;}.weekly-content li{margin-bottom:.4rem;}
+.weekly-content a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.weekly-content a:hover{color:var(--ink);}
+.impact-nums{display:flex;flex-wrap:wrap;gap:1rem;margin:1.2rem 0;}
+.impact-num{background:var(--ink);color:var(--cream);padding:.6rem 1.1rem;border-radius:4px;text-align:center;min-width:100px;}
+.impact-num strong{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:var(--gold-light);display:block;line-height:1;}
+.impact-num span{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;margin-top:3px;display:block;}
+.upcoming-placeholder{padding:3rem;text-align:center;color:var(--muted);}
+.upcoming-placeholder p{font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:.05em;}
+.about-wrap{max-width:680px;margin:0 auto;padding:3.5rem 2rem 5rem;}
+.about-wrap h2{font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,46px);font-weight:900;margin-bottom:2rem;letter-spacing:-.02em;}
+.about-wrap p{font-family:'EB Garamond',serif;font-size:18px;line-height:1.85;color:var(--ink-soft);margin-bottom:1.2rem;}
+.about-wrap h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin:2.5rem 0 .75rem;}
+.about-wrap ul{padding-left:1.3rem;margin-bottom:1rem;}
+.about-wrap li{font-family:'EB Garamond',serif;font-size:17.5px;line-height:1.75;color:var(--ink-soft);margin-bottom:.3rem;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-brand" onclick="showView('home')">Learning <span>Out Loud</span></div>
+  <div class="nav-links">
+    <button class="nav-link active" id="nav-home" onclick="showView('home')">Home</button>
+    <button class="nav-link" id="nav-journal" onclick="showView('journal')">Journal</button>
+    <button class="nav-link" id="nav-about" onclick="showView('about')">About</button>
+  </div>
+  <div class="nav-week-badge">Week 9</div>
+</nav>
+
+<!-- HOME -->
+<div class="view active" id="view-home">
+  <div class="masthead">
+    <div class="masthead-side">Vol. I &nbsp;·&nbsp; May 2026</div>
+    <div class="masthead-center">Learning Out Loud</div>
+    <div class="masthead-side" style="text-align:right">Hindustani Tongue<br>Internship Journal</div>
+  </div>
+  <section class="hero">
+    <p class="hero-kicker">A Social Media Marketing Intern's Public Journal</p>
+    <h1 class="hero-hl">Every day.<br><em>Documented.</em></h1>
+    <p class="hero-sub">Three months. Twelve weeks. Seventy-two working days. Every learning, every mistake, every small victory — written down and shared with the world.</p>
+    <div class="hero-rule"><div class="diamond"></div></div>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showView('journal')"><span>Read the Journal →</span></button>
+      <button class="btn-secondary" onclick="showView('about')">About This Project</button>
+    </div>
+  </section>
+  <div class="stats-band reveal">
+    <div class="stats-inner">
+      <div><span class="stat-n">3</span><span class="stat-l">Months</span></div>
+      <div><span class="stat-n">12</span><span class="stat-l">Weeks</span></div>
+      <div><span class="stat-n">72</span><span class="stat-l">Working Days</span></div>
+      <div><span class="stat-n">4</span><span class="stat-l">Things Tracked Weekly</span></div>
+    </div>
+  </div>
+  <div class="about-strip">
+    <div class="sec-label reveal">The Story</div>
+    <p class="drop-p reveal">Most people wait until they're an expert before they start sharing. I decided to do the opposite. On May 11, 2026, I walked into my first day as a Social Media Marketing Intern at Hindustani Tongue — and I started writing everything down. Publicly.</p>
+    <p class="drop-p reveal" style="font-size:19px">Not the polished highlights. Not the LinkedIn-ready achievements. The real stuff — what confused me, what I got wrong, what I accidentally learned by making a mistake.</p>
+    <div class="pullquote reveal">
+      <p>"The best way to learn is to document the journey — not just the destination."</p>
+      <cite>— The philosophy behind this journal</cite>
+    </div>
+    <div class="sec-label reveal">What I Track Every Week</div>
+    <div class="tracks-grid reveal">
+      <div class="track-card"><span class="track-icon">📚</span><div class="track-name">Key Things I Learned</div><div class="track-desc">Concepts, strategies, tools — even the smallest insight gets a line.</div></div>
+      <div class="track-card"><span class="track-icon">💼</span><div class="track-name">Projects & Tasks</div><div class="track-desc">Real work — blogs published, content created, campaigns managed.</div></div>
+      <div class="track-card"><span class="track-icon">⚠️</span><div class="track-name">Challenges & Fixes</div><div class="track-desc">What went wrong, and exactly how I course-corrected.</div></div>
+      <div class="track-card"><span class="track-icon">✦</span><div class="track-name">Biggest Win</div><div class="track-desc">The one thing each week that made all the hard work worth it.</div></div>
+    </div>
+    <div class="ornament reveal">— ✦ —</div>
+    <div class="week-progress-home reveal">
+      <div class="wph-title">12-Week Progress</div>
+      <div class="wph-sub">May – August 2026 &nbsp;·&nbsp; Mon–Sat</div>
+      <div class="weeks-home">
+        <div class="wh-chip done" onclick="goToWeek(1)"><span class="wh-num">01</span><span class="wh-lbl">May 11–16 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(2)"><span class="wh-num">02</span><span class="wh-lbl">May 18–23 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(3)"><span class="wh-num">03</span><span class="wh-lbl">May 25–30 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(4)"><span class="wh-num">04</span><span class="wh-lbl">Jun 1–6 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(5)"><span class="wh-num">05</span><span class="wh-lbl">Jun 8–13 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(6)"><span class="wh-num">06</span><span class="wh-lbl">Jun 15–20 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(7)"><span class="wh-num">07</span><span class="wh-lbl">Jun 22–27 ✓</span></div>
+        <div class="wh-chip done" onclick="goToWeek(8)"><span class="wh-num">08</span><span class="wh-lbl">Jun 29–Jul 4 ✓</span></div>
+        <div class="wh-chip current" onclick="goToWeek(9)"><span class="wh-num">09</span><span class="wh-lbl">Jul 6–11</span></div>
+        <div class="wh-chip"><span class="wh-num">10</span><span class="wh-lbl">Jul 14–19</span></div>
+        <div class="wh-chip"><span class="wh-num">11</span><span class="wh-lbl">Jul 21–26</span></div>
+        <div class="wh-chip"><span class="wh-num">12</span><span class="wh-lbl">Jul 28–Aug 2</span></div>
+      </div>
+    </div>
+  </div>
+  <footer class="home-footer">
+    <div class="hf-logo">Prabhjot Kaur</div>
+    <span class="hf-tag">Social Media Marketing Intern · Hindustani Tongue · 2026</span>
+    <br>
+    <button class="btn-primary" onclick="showView('journal')" style="margin:0 auto"><span>Open the Journal →</span></button>
+    <div class="hf-meta">Updated every working week &nbsp;·&nbsp; Monday – Saturday &nbsp;·&nbsp; No confidential data shared</div>
+  </footer>
+</div>
+
+<!-- JOURNAL -->
+<div class="view" id="view-journal">
+<div class="journal-wrap">
+  <div class="journal-header">
+    <h2>The Journal</h2>
+    <p>Social Media Marketing Internship · Hindustani Tongue · May – August 2026</p>
+  </div>
+
+  <div class="month-section">
+    <div class="month-title">Month 1 <small>May – June 2026</small></div>
+
+    <!-- WEEK 1 -->
+    <div class="week-card" id="week-card-1">
+      <div class="week-head" onclick="toggleWeek(1)">
+        <div class="week-head-left">
+          <div class="week-num">01</div>
+          <div class="week-meta">
+            <div class="week-title">First Week — Hitting the Ground Running</div>
+            <div class="week-dates">May 11 – 16, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="day-tabs" id="tabs-w1">
+          <button class="day-tab active filled" onclick="switchDay('w1',1)">Mon 11</button>
+          <button class="day-tab filled" onclick="switchDay('w1',2)">Tue 12</button>
+          <button class="day-tab filled" onclick="switchDay('w1',3)">Wed 13</button>
+          <button class="day-tab filled" onclick="switchDay('w1',4)">Thu 14</button>
+          <button class="day-tab filled" onclick="switchDay('w1',5)">Fri 15</button>
+          <button class="day-tab filled" onclick="switchDay('w1',6)">Sat 16</button>
+        </div>
+        <div class="day-panels" id="panels-w1">
+          <div class="day-panel active" id="w1-d1">
+            <div class="day-panel-date">Monday · May 11, 2026 &nbsp;·&nbsp; Week 1, Day 1 &nbsp;·&nbsp; <strong style="color:var(--rust)">First Day ✦</strong></div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">Presentation = trust from day one. First real look at Google Search Console and organic visibility.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">Rushed the presentation from nerves. Lesson: slow down.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Presented research & ideas. Got my first task — built a blog tracker with auto-updating numbers.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">Google Search Console &nbsp;·&nbsp; Google Sheets &nbsp;·&nbsp; Presentation skills</div></div>
+          </div>
+          <div class="day-panel" id="w1-d2">
+            <div class="day-panel-date">Tuesday · May 12, 2026 &nbsp;·&nbsp; Week 1, Day 2</div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">SEO = audit + rewrite + strategy. Backlinks are about relevance, not quantity.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">Skimmed instead of reading deeply — slowed down, edits improved.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Full SEO audit + rewrite of a blog, published same day. Built a backlink tracker. Secured 7 organic backlinks.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">SEO writing &nbsp;·&nbsp; On-page SEO &nbsp;·&nbsp; Backlink strategy &nbsp;·&nbsp; Sheets &nbsp;·&nbsp; WordPress</div></div>
+          </div>
+          <div class="day-panel" id="w1-d3">
+            <div class="day-panel-date">Wednesday · May 13, 2026 &nbsp;·&nbsp; Week 1, Day 3</div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">Guest posting needs real research, not just Google. Got hands-on with WordPress publishing.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">First guest post list had low-authority sites — filtered by relevance.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Shortlisted guest post targets. Wrote & uploaded 2nd SEO blog. Wrote a backlink-focused article.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">WordPress &nbsp;·&nbsp; Guest post research &nbsp;·&nbsp; Article writing &nbsp;·&nbsp; SEO writing</div></div>
+          </div>
+          <div class="day-panel" id="w1-d4">
+            <div class="day-panel-date">Thursday · May 14, 2026 &nbsp;·&nbsp; Week 1, Day 4</div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">GSC metrics tell different stories — impressions, clicks, CTR, position each matter.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">Tried analysing everything at once — learned to filter by query and date.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Deep GSC analysis. Built a filtering sheet for old blogs. Wrote another SEO rewrite.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">GSC (advanced) &nbsp;·&nbsp; Keyword research &nbsp;·&nbsp; Data filtering &nbsp;·&nbsp; Sheets &nbsp;·&nbsp; SEO writing</div></div>
+          </div>
+          <div class="day-panel" id="w1-d5">
+            <div class="day-panel-date">Friday · May 15, 2026 &nbsp;·&nbsp; Week 1, Day 5</div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">Backlinks take time to show in GSC, especially on newer accounts. Patience is part of the strategy.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">Assumed something was broken — investigated before concluding.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Built a backlink acquisition sheet. Added backlinks to new content. Solved the GSC visibility question for the founder. Updated another old blog.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">GSC troubleshooting &nbsp;·&nbsp; Backlink research &nbsp;·&nbsp; Cross-platform analysis &nbsp;·&nbsp; SEO writing</div></div>
+          </div>
+          <div class="day-panel" id="w1-d6">
+            <div class="day-panel-date">Saturday · May 16, 2026 &nbsp;·&nbsp; Week 1, Day 6</div>
+            <div class="entry-section"><div class="entry-label">📚 Learned</div><div class="entry-content">Consistency compounds — sharpen what already has momentum.</div></div>
+            <div class="entry-section"><div class="entry-label">⚠️ Mistake & Fix</div><div class="entry-content">None major — focused on quality after a long week.</div></div>
+            <div class="entry-section"><div class="entry-label">💼 Did</div><div class="entry-content">Refreshed & published a high-impression blog. Reviewed the week's progress.</div></div>
+            <div class="entry-section"><div class="entry-label">🔧 Tools</div><div class="entry-content">GSC &nbsp;·&nbsp; SEO writing &nbsp;·&nbsp; WordPress &nbsp;·&nbsp; Content strategy</div></div>
+          </div>
+        </div>
+        <div class="week-reflection">
+          <div class="wr-label">Week 1 · Key Win</div>
+          <div class="wr-win">By the end of the week, impressions and clicks on updated blogs were already growing.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div class="week-card" id="week-card-2">
+      <div class="week-head" onclick="toggleWeek(2)">
+        <div class="week-head-left">
+          <div class="week-num">02</div>
+          <div class="week-meta">
+            <div class="week-title">Second Week — Taking Ownership</div>
+            <div class="week-dates">May 18 – 23, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">Full WordPress access. First blog published independently. Ownership begins.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>5</strong><span>Blogs Published</span></div>
+            <div class="impact-num"><strong>4</strong><span>Blog Contents Created</span></div>
+            <div class="impact-num"><strong>9</strong><span>Backlink Articles</span></div>
+            <div class="impact-num"><strong>1</strong><span>Guest Post Strategy Doc</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Audio content — new territory, learned it on the job.</li>
+              <li>Guest posting = real research + personal pitches, not mass templates.</li>
+              <li>WordPress access is a real responsibility — publishing, formatting, indexing.</li>
+              <li>GSC data is only useful if you act on it — built a prioritisation sheet.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Reviewed Week 1 blog performance</li>
+              <li>Created & edited audio content for a blog</li>
+              <li>Built a guest post strategy doc with pitch templates</li>
+              <li>Wrote backlink articles for 2 blogs</li>
+              <li>Got full WordPress access, updated HTML directly</li>
+              <li>Built a prioritisation sheet for old blogs</li>
+              <li>Drafted 4 new blog contents</li>
+              <li>Published <strong>first blog independently</strong> — write, upload, index, backlinks</li>
+              <li>Published 2 more blogs, submitted indexing requests</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">WordPress was new. Spent day one learning it properly — by week's end, publishing independently.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">WordPress · GSC · Google Sheets · SEO writing · Backlink strategy · Audio editing · Guest post research</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 2 · Biggest Win</div>
+            <div class="wr-win">Published my first blog fully independently — no hand-holding.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div class="week-card" id="week-card-3">
+      <div class="week-head" onclick="toggleWeek(3)">
+        <div class="week-head-left">
+          <div class="week-num">03</div>
+          <div class="week-meta">
+            <div class="week-title">Third Week — Strategy, Signals & My First Byline</div>
+            <div class="week-dates">May 25 – 30, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">Two original bylined blogs. Caught a traffic drop before anyone else. Built the strategy report that reshaped the company's content direction.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>2</strong><span>Blogs Under My Name</span></div>
+            <div class="impact-num"><strong>2</strong><span>Blogs Uploaded & Indexed</span></div>
+            <div class="impact-num"><strong>12</strong><span>Backlink Articles</span></div>
+            <div class="impact-num"><strong>1</strong><span>SEO+GEO Strategy Report</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Generic SEO is becoming invisible — need real stories, citations, E-E-A-T.</li>
+              <li>GEO already affects traffic today, not a future concept.</li>
+              <li>A good report = clear communication — wrote a technical + a simplified version.</li>
+              <li>Real, research-backed stories rank and resonate more.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Uploaded & indexed 2 blogs, built backlinks</li>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/how-to-teach-kids-mother-tongue-abroad/" target="_blank">How to Teach Kids Mother Tongue Abroad ↗</a></li>
+              <li>Spotted a GSC impressions drop, researched Google's AI review box, delivered a full SEO + GEO strategy report</li>
+              <li>Founder praised the report — assigned follow-up GEO research + a strategy meeting</li>
+              <li>Published 2nd bylined blog: <a href="https://hindustanitongue.com/why-nris-need-to-know-their-mother-tongue/" target="_blank">Why NRIs Need to Know Their Mother Tongue ↗</a></li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">Spotted a quiet GSC drop and investigated instead of panicking — traced it to Google's AI review box rollout, and the strategy shifted.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">GSC · WordPress · Google Sheets · SEO+GEO frameworks · E-E-A-T · Citation research · Backlink strategy</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 3 · Biggest Win</div>
+            <div class="wr-win">Two bylined blogs + a strategy report that changed the company's content direction.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div class="week-card" id="week-card-4">
+      <div class="week-head" onclick="toggleWeek(4)">
+        <div class="week-head-left">
+          <div class="week-num">04</div>
+          <div class="week-meta">
+            <div class="week-title">Fourth Week — Outreach, Optimisation & an Unexpected Signal</div>
+            <div class="week-dates">Jun 1 – 6, 2026 &nbsp;·&nbsp; Mon – Fri (Sat: Founder's Holiday)</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">Guest post outreach at scale. An old blog optimised with fresh data. And an unexpected AI recommendation that changed the next phase of strategy.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>1</strong><span>Blog Published</span></div>
+            <div class="impact-num"><strong>1</strong><span>Old Blog Optimised</span></div>
+            <div class="impact-num"><strong>6</strong><span>Backlink Articles</span></div>
+            <div class="impact-num"><strong>1</strong><span>Guest Post Article Drafted</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Old blog optimisation = fill gaps in depth, citations, data — Trends helped pick direction.</li>
+              <li>Personalised guest post pitches convert better than generic ones.</li>
+              <li>Review outreach needs precision — a different tone than cold pitching.</li>
+              <li>An AI visibility signal arrived before we even targeted it — reframed priorities.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Wrote 3 backlink articles for a published blog</li>
+              <li>Drafted an email template + guest post article for an outreach target</li>
+              <li>Optimised & republished an old blog with citations & data</li>
+              <li>Wrote 3 backlink articles for the refreshed blog</li>
+              <li>Ran review outreach to past publications</li>
+              <li>Drafted a new guest post article</li>
+              <li>Researched queries for upcoming blog topics</li>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/heritage-language-for-nri-families/" target="_blank">Heritage Language for NRI Families ↗</a></li>
+              <li>Studied AI overview updates & shifting AI search behaviour</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">Got an AI recommendation signal before actively targeting AI visibility — started researching immediately to build a response.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">WordPress · GSC · Google Trends · SEO writing · Backlink strategy · Guest post outreach · Email drafting · Keyword research</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 4 · Biggest Win</div>
+            <div class="wr-win">An unplanned AI recommendation — proof the content direction was already working.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MONTH 2 -->
+  <div class="month-section">
+    <div class="month-title">Month 2 <small>June – July 2026</small></div>
+
+    <!-- WEEK 5 -->
+    <div class="week-card" id="week-card-5">
+      <div class="week-head" onclick="toggleWeek(5)">
+        <div class="week-head-left">
+          <div class="week-num">05</div>
+          <div class="week-meta">
+            <div class="week-title">Fifth Week — Publishing, Schema & 46 Guest Post Pitches</div>
+            <div class="week-dates">Jun 8 – 13, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">Highest output week yet — 3 bylined blogs, a full schema audit, and 46 individually researched guest post pitches.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>3</strong><span>Blogs Published</span></div>
+            <div class="impact-num"><strong>9</strong><span>Backlink Articles</span></div>
+            <div class="impact-num"><strong>46</strong><span>Guest Post Pitches</span></div>
+            <div class="impact-num"><strong>1</strong><span>Full Schema Audit</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Schema markup matters for both search engines and AI crawlers.</li>
+              <li>Domain authority is a filter — check it before committing to outreach.</li>
+              <li>Guest pitching at scale needs a real workflow, not shortcuts.</li>
+              <li>Consistent publishing compounds authority over time.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Wrote 3 backlink articles, drafted new blog content</li>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/understand-tamil-but-cant-speak/" target="_blank">Understand Tamil But Can't Speak? ↗</a> + 3 backlinks</li>
+              <li>Researched keywords, competitors & DA before finalising new blog direction</li>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/online-hindi-classes-for-kids-win-usa/" target="_blank">Online Hindi Classes for Kids — USA ↗</a> + 3 backlinks</li>
+              <li>Ran a full schema audit (Rich Results Test + Schema.org) — all tests passed</li>
+              <li>Researched 9 sites, drafted individual guest post pitches</li>
+              <li>Researched 46 high-DA sites, drafted personalised pitches for each, sent to founder for review</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">46 pitches is a lot to personalise. Researched each one individually instead of batching — took longer, worth it.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">WordPress · GSC · Rich Results Test · Schema.org Validator · DA checker · SEO writing · Backlink strategy · Guest post outreach · Competitor research</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 5 · Biggest Win</div>
+            <div class="wr-win">Every blog passed schema validation, and 46 personalised pitches were ready to go.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 6 -->
+    <div class="week-card signature-week" id="week-card-6">
+      <div class="week-head" onclick="toggleWeek(6)">
+        <div class="week-head-left">
+          <div class="week-num">06</div>
+          <div class="week-meta">
+            <div class="week-title">Sixth Week — Auditing Our AI Visibility</div>
+            <div class="week-dates">Jun 15 – 20, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <span class="signature-tag">Signature Work</span>
+          <p class="weekly-intro">Built a framework to actually measure AI visibility — tested 12 queries across 4 AI platforms and caught a pricing error before it caused damage.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>56</strong><span>Guest Pitches Refined</span></div>
+            <div class="impact-num"><strong>12</strong><span>AI Queries Tested</span></div>
+            <div class="impact-num"><strong>4</strong><span>AI Platforms Audited</span></div>
+            <div class="impact-num"><strong>1</strong><span>New Blog Published</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Subject lines carry outreach — reworked 56 of them based on feedback.</li>
+              <li>AI visibility must be measured, not assumed — built a 6-dimension audit framework.</li>
+              <li>Each AI platform behaves differently — same query, different results.</li>
+              <li>Being found isn't enough — being found accurately matters more.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Revised & resent 56 guest post pitches, followed up where needed</li>
+              <li>Rewrote all 56 subject lines</li>
+              <li>Built an AI Visibility Audit framework (query, intent, brand recommended, competitors, accuracy, position)</li>
+              <li>Shortlisted 12 test queries across brand/trust/comparison/consideration intent</li>
+              <li>Ran queries across ChatGPT, Gemini, Claude, Perplexity — documented with screenshots</li>
+              <li>Flagged a pricing inaccuracy + info gaps to the founder</li>
+              <li>Ran comparison queries to see why competitors got recommended</li>
+              <li>Built a follow-up content strategy to close AI info gaps</li>
+              <li>Reviewed guest post replies</li>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/online-hindi-tutor-parent-buying-guide/" target="_blank">Online Hindi Tutor — Parent's Buying Guide ↗</a></li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">No existing playbook for auditing AI visibility — had to design the framework myself before testing anything.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">ChatGPT · Gemini · Claude · Perplexity · Sheets (custom audit) · Email outreach · WordPress · GSC · SEO+GEO strategy</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 6 · Biggest Win</div>
+            <div class="wr-win">Built a repeatable AI visibility framework — and caught a pricing error before it caused damage.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 7 -->
+    <div class="week-card" id="week-card-7">
+      <div class="week-head" onclick="toggleWeek(7)">
+        <div class="week-head-left">
+          <div class="week-num">07</div>
+          <div class="week-meta">
+            <div class="week-title">Seventh Week — Outreach & a Trust Play</div>
+            <div class="week-dates">Jun 22 – 27, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">Guest post outreach and a new trust-signal play with Trustpilot.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>3</strong><span>Backlink Articles</span></div>
+            <div class="impact-num"><strong>3</strong><span>Guest Post Articles</span></div>
+            <div class="impact-num"><strong>9</strong><span>Sites Outreached</span></div>
+            <div class="impact-num"><strong>1</strong><span>Trustpilot Strategy</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Trust signals like reviews matter as much as backlinks.</li>
+              <li>Pre-vetted sites make guest post outreach far more efficient.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Wrote 3 backlink articles</li>
+              <li>Wrote 3 guest post articles</li>
+              <li>Built a Trustpilot review strategy for trust & authority</li>
+              <li>Researched and shortlisted guest post sites</li>
+              <li>Outreached to 9 sites for articles</li>
+              <li>Sent over the finished articles</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">Writing and outreach landed in the same week — finished every article fully before sending, so nothing went out half-done.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">WordPress · Backlink strategy · Guest post outreach · Trustpilot · Email outreach</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 7 · Biggest Win</div>
+            <div class="wr-win">9 sites reached, all articles delivered by week's end.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 8 -->
+    <div class="week-card" id="week-card-8">
+      <div class="week-head" onclick="toggleWeek(8)">
+        <div class="week-head-left">
+          <div class="week-num">08</div>
+          <div class="week-meta">
+            <div class="week-title">Eighth Week — First Collaboration Push</div>
+            <div class="week-dates">Jun 29 – Jul 4, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">New territory — pitching brand collaborations instead of just guest posts.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>1</strong><span>Collaboration Strategy</span></div>
+            <div class="impact-num"><strong>15</strong><span>Sites Outreached</span></div>
+            <div class="impact-num"><strong>1</strong><span>Blog Drafted</span></div>
+            <div class="impact-num"><strong>Several</strong><span>Replies Handled</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Collaboration outreach needs a different pitch than guest posting.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Built the strategy for a new collaboration project</li>
+              <li>Outreached to 15 sites for collaboration</li>
+              <li>Reviewed and replied to incoming responses</li>
+              <li>Worked on new blog content</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">Lost a day to a technical issue — caught up by clearing replies the next day instead of letting the backlog grow.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">Email outreach · Collaboration strategy · WordPress · Content writing</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 8 · Biggest Win</div>
+            <div class="wr-win">15 sites reached for collaboration in two days, with responses already coming in.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MONTH 3 -->
+  <div class="month-section">
+    <div class="month-title">Month 3 <small>July – August 2026</small></div>
+
+    <!-- WEEK 9 -->
+    <div class="week-card open" id="week-card-9">
+      <div class="week-head" onclick="toggleWeek(9)">
+        <div class="week-head-left">
+          <div class="week-num">09</div>
+          <div class="week-meta">
+            <div class="week-title">Ninth Week — New Blog, Survey & Workshop Outreach</div>
+            <div class="week-dates">Jul 6 – 11, 2026 &nbsp;·&nbsp; Mon – Sat</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-done">Done ✓</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="weekly-body">
+          <p class="weekly-intro">New bylined blog live, plus first steps into workshops and student exchange collabs.</p>
+          <div class="impact-nums">
+            <div class="impact-num"><strong>1</strong><span>Blog Published & Indexed</span></div>
+            <div class="impact-num"><strong>1</strong><span>Academic Survey Created</span></div>
+            <div class="impact-num"><strong>2</strong><span>Collab Outreach Tracks</span></div>
+            <div class="impact-num"><strong>Several</strong><span>Email Templates</span></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">📚 Key Things I Learned</div>
+            <div class="weekly-content"><ul>
+              <li>Backlink building right after publishing keeps momentum going.</li>
+              <li>Academic surveys open up a new, data-backed content angle.</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">💼 Projects & Tasks Completed</div>
+            <div class="weekly-content"><ul>
+              <li>Published bylined blog: <a href="https://hindustanitongue.com/indian-languages-for-travelers/" target="_blank">Indian Languages for Travelers ↗</a>, indexed same day</li>
+              <li>Built backlinks for the new blog</li>
+              <li>Created an academic survey for language learners worldwide</li>
+              <li>Outreached for free workshop collaborations</li>
+              <li>Outreached to student exchange program sites, replied to responses</li>
+              <li>Prepared email templates for student program & travel sites</li>
+            </ul></div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">⚠️ Challenges & How I Handled Them</div>
+            <div class="weekly-content">Workshop and exchange-program outreach needed a different pitch than guest posts — built templates to keep it consistent.</div>
+          </div>
+          <div class="weekly-section">
+            <div class="weekly-label">🔧 Tools Used</div>
+            <div class="weekly-content">WordPress · GSC · Backlink strategy · Survey design · Email outreach · Collaboration outreach</div>
+          </div>
+          <div class="week-reflection">
+            <div class="wr-label">Week 9 · Biggest Win</div>
+            <div class="wr-win">New blog live and indexed, plus templates ready to scale workshop & exchange-program outreach.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 10 upcoming -->
+    <div class="week-card" id="week-card-10">
+      <div class="week-head" onclick="toggleWeek(10)">
+        <div class="week-head-left">
+          <div class="week-num" style="color:var(--muted)">10</div>
+          <div class="week-meta">
+            <div class="week-title">Tenth Week</div>
+            <div class="week-dates">Jul 14 – 19, 2026</div>
+          </div>
+        </div>
+        <span class="week-status-badge badge-upcoming">Upcoming</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">
+        <div class="upcoming-placeholder"><p>⏳ Coming soon — starts July 14</p></div>
+      </div>
+    </div>
+
+    <div style="padding:2rem;text-align:center;color:var(--muted);border:1px solid var(--border)">
+      <p style="font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:.05em">Weeks 11–12 will appear here as the internship progresses.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div class="view" id="view-about">
+<div class="about-wrap">
+  <h2>About This Journal</h2>
+  <p>Hi! I'm <strong>Prabhjot Kaur</strong> — a Social Media Marketing Intern at <strong>Hindustani Tongue</strong>, May–August 2026. This is my public learning journal, updated every working week.</p>
+  <p>I decided to document my internship publicly from day one. Not just the wins — everything. The confusion, the small progress, the mistakes I caught too late, and the moments something finally clicked.</p>
+  <div class="pullquote" style="margin:2rem 0">
+    <p>"Most people only share wins. I want to share the full picture."</p>
+  </div>
+  <h3>What I Track Each Week</h3>
+  <ul>
+    <li><strong>🎯 What I Focused On</strong> — the theme and direction of the week</li>
+    <li><strong>📚 Key Things I Learned</strong> — concepts, strategies, tools, industry insights</li>
+    <li><strong>💼 Projects & Tasks</strong> — real work I contributed to at Hindustani Tongue</li>
+    <li><strong>⚠️ Challenges & Fixes</strong> — what went wrong and how I course-corrected</li>
+    <li><strong>🔧 Tools Used</strong> — the toolkit I'm building, one week at a time</li>
+    <li><strong>✦ Biggest Win</strong> — the one thing that made the week worth it</li>
+  </ul>
+  <h3>What I Won't Share</h3>
+  <p>No confidential client data, internal strategies, or anything that would breach trust with my team. This is about my personal learning journey — not company secrets.</p>
+  <h3>The Schedule</h3>
+  <p>6 days a week, Monday through Saturday. 12 weeks total. Week 1 is documented day by day — from Week 2 onwards, weekly reflections every Saturday.</p>
+</div>
+</div>
+
+<script>
+function showView(name){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
+  document.getElementById('view-'+name).classList.add('active');
+  document.getElementById('nav-'+name).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  initReveal();
+}
+function goToWeek(n){
+  showView('journal');
+  setTimeout(()=>{
+    const card=document.getElementById('week-card-'+n);
+    if(card){card.scrollIntoView({behavior:'smooth',block:'start'});}
+  },350);
+}
+function toggleWeek(n){
+  const card=document.getElementById('week-card-'+n);
+  card.classList.toggle('open');
+}
+function switchDay(weekId,dayNum){
+  const tabs=document.querySelectorAll(`#tabs-${weekId} .day-tab`);
+  const panels=document.querySelectorAll(`#panels-${weekId} .day-panel`);
+  tabs.forEach((t,i)=>t.classList.toggle('active',i===dayNum-1));
+  panels.forEach((p,i)=>p.classList.toggle('active',i===dayNum-1));
+}
+function initReveal(){
+  const els=document.querySelectorAll('.reveal:not(.visible)');
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target);}
+    });
+  },{threshold:0.1});
+  els.forEach(el=>obs.observe(el));
+}
+initReveal();
+</script>
+</body>
+</html>
